@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+@import "tailwindcss";
+@theme {
+  --font-display:  "Cherry Bomb One", "sans-serif";
+}
+
+body {
+    background-color: #1e1e1e;
+}
