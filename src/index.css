@@ -2,7 +2,9 @@
 
 @import "tailwindcss";
 
-
+body{
+  @apply bg-gray-950 text-purple-200 font-mono;
+}
 
 @layer components{
   /* px-4 and px-8 for mobile and 平板 */
@@ -39,8 +41,4 @@
 // install POSTCSS to disable warning
 @theme {
   --font-display:  "Cherry Bomb One", "sans-serif";
-}
-
-body {
-    background-color: #1e1e1e;
 }
