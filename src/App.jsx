@@ -15,7 +15,7 @@ function App() {
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-indigo-500/20 blur-2xl rounded-full" />
 
       {/* 實際內容 */}
-      <div className="relative z-10 min-h-screen flex flex-col">
+      <div className="center-container">
         <Header />
         <Scene className="w-full h-[550px]" />
         <Hero />

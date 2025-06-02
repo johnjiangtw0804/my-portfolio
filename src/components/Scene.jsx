@@ -39,7 +39,7 @@ function TypingAnime() {
 function Scene({ className }) {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
-    <div className={`flex ${className}`}>
+    <div className={`flex ${className} section-container`}>
       <Canvas
         className="flex-[2] h-full overflow-hidden"
         camera={{ position: [5, 0, 10], fov: 60 }} // 👁️ Move closer

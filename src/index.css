@@ -1,44 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
-
 @import "tailwindcss";
 
-body{
+:root {
+  --font-display: "Cherry Bomb One", sans-serif;
+}
+
+body {
   @apply bg-gray-950 text-purple-200 font-mono;
 }
 
-@layer components{
-  /* px-4 and px-8 for mobile and 平板 */
+@layer components {
+  /* Navbar: 固定最大寬度並置中 */
   .navbar-container {
-    @apply flex justify-between items-center w-full max-w-5xl h-16 px-4 md:px-8 mx-auto;
+    @apply flex container justify-between items-center max-w-5xl h-16 mx-auto px-4 md:px-8;
   }
 
-  /* div: 響應式最大寬度 + 自動置中 + padding */
+  /* 區塊容器 */
   .section-container {
-    @apply text-amber-50  container mx-auto px-4 sm:px-6 lg:px-8;
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* 大標題: 像 about me */
+  /* 標題 */
   .title-xl {
-    @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900;
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold;
   }
 
-  /* 🧠 副標題（中） */
   .title-md {
-    @apply text-lg sm:text-xl md:text-2xl text-gray-600;
+    @apply text-lg sm:text-xl md:text-2xl;
   }
 
-    /* 📄 正文段落 */
+  /* 正文段落 */
   .text-body {
-    @apply text-sm sm:text-base md:text-lg text-gray-500 leading-relaxed max-w-xl mx-auto;
+    @apply text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto;
   }
-    /* icon */
+
+  /* 社群 icon */
   .social-icon {
     @apply text-xl text-gray-400 hover:text-blue-500 transition;
   }
-}
 
-
-// install POSTCSS to disable warning
-@theme {
-  --font-display:  "Cherry Bomb One", "sans-serif";
+  /* 內容中央容器 */
+  .center-container {
+    @apply z-10 min-h-screen flex flex-col space-y-8;
+  }
 }
