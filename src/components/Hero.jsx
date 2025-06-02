@@ -16,7 +16,7 @@ function AboutMe() {
 function Hero() {
   return (
     <div className="section-container py-16">
-      <h1 className="title-xl mb-6">About Me</h1>
+      <h1 className="title-xl mb-6 font-sans">About Me</h1>
       <AboutMe />
       <img
         src={Avatar}

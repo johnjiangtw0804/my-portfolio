@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Scene from "./components/Scene";
+import Scene from "./components/Anime";
 import Hero from "./components/Hero";
 
 // scene: container all the action happens (space)

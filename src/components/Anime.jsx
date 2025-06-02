@@ -4,6 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Room } from "./Optimized-room";
 import { useMediaQuery } from "react-responsive";
 import HeroLights from "./HeroRoomLights";
+import Particles from "./Particles";
 import { TypeAnimation } from "react-type-animation";
 
 function TypingAnime() {
@@ -45,6 +46,7 @@ function Scene({ className }) {
         camera={{ position: [5, 0, 10], fov: 60 }} // 👁️ Move closer
       >
         <HeroLights />
+        <Particles count={100}></Particles>
         <OrbitControls
           enablePan={false}
           maxDistance={20}
