@@ -39,8 +39,19 @@ const quotes = [
   },
 ];
 
-const aboutMe = `Hello!
+const aboutMe = `Hello ❤️
 
-I'm Jonathan Jiang, a passionate software engineer with experience in backend, DevOps/SRE, and system design. I enjoy solving complex problems and building scalable applications. In my free time, I explore new technologies and work on personal projects.`;
+It is really nice to see you here.
+I'm a passionate software engineer with experience in backend development, DevOps/SRE, and system design.
+In my free time, I explore new technologies and build personal projects — like this one.`;
 
-export { quotes, aboutMe };
+
+const aboutMeItems = [
+  {
+    label: "Projects done",
+    number: 5
+  }, {
+    label: "Years Of experience",
+  number: 3}]
+
+  export { quotes, aboutMeItems, aboutMe };

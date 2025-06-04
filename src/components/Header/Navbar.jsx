@@ -43,8 +43,8 @@ function Navbar({ navOpen }) {
       className: "nav-link",
     },
     {
-      label: "Reviews",
-      link: "#reviews",
+      label: "Socials",
+      link: "#Socials",
       className: "nav-link",
     },
     {

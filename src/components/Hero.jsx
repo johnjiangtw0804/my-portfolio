@@ -1,17 +1,10 @@
 import Avatar from "/images/Avatar.svg";
 import Anime from "./Anime/Anime";
 import { useEffect, useState } from "react";
-import { aboutMe, quotes } from "./Constants/contents";
-import ButtonPrimary from "./ButtonPrimary";
-import ButtonOutline from "./ButtonOutline";
-
-function AboutMe() {
-  return (
-    <div className="text-body bg-zinc-800/50 rounded-2xl p-7 md:p-12">
-      <p className="text-zinc-300 mb-4 md:mb-8">{aboutMe}</p>
-    </div>
-  );
-}
+import { quotes } from "./Constants/contents";
+import ButtonPrimary from "./Buttons/ButtonPrimary";
+import ButtonOutline from "./Buttons/ButtonOutline";
+import TypingAnime from "./Anime/TextAnimation";
 
 function QuoteBox({ quote }) {
   return (
@@ -39,22 +32,22 @@ function RandomQuoteBox() {
 
 function Hero() {
   return (
-    <section id="home" className="pt-20 lg:pt-36">
+    <section id="home" className="section">
       <div className="container grid grid-cols-1 md:grid-cols-2 items-center container-supplement gap-6">
         {/* Animation */}
         <div>
           <Anime />
         </div>
-        <div>
+        <div className="flex items-center h-[200px]">
           <TypingAnime />
         </div>
         <div>
           {/* 上線狀態跟 Quote */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             <figure className="w-10 h-10 rounded-lg mb-5">
               <img src={Avatar} alt="Jonathan's Avatar" className="img-cover" />
             </figure>
-            <div className="flex items-center gap-1.5 text-medium tracking-wide">
+            <div className="flex items-center gap-1.5 text-medium tracking-wide ml-3.5">
               <span className="relative w-2 h-2 rounded-full bg-emerald-200">
                 <span className="absolute inset-0 rounded-full animate-ping bg-emerald-200"></span>
               </span>
@@ -63,32 +56,16 @@ function Hero() {
           </div>
           <RandomQuoteBox />
         </div>
-        <div className="flex justify-between gap-3">
-          <ButtonPrimary></ButtonPrimary>
-          <ButtonOutline></ButtonOutline>
+        <div className="flex gap-3">
+          <ButtonPrimary label="Download CV" icon="download"></ButtonPrimary>
+          <ButtonOutline
+            href="#about"
+            label="scroll down"
+            icon="arrow_downward"
+          />
         </div>
       </div>
     </section>
-  );
-}
-
-import { TypeAnimation } from "react-type-animation";
-function TypingAnime() {
-  return (
-    <TypeAnimation
-      sequence={[
-        "Hi,",
-        1000,
-        "Welcome to my portfolio :)",
-        2000,
-        "Here is where the story begins...",
-        () => {},
-      ]}
-      wrapper="span"
-      cursor={true}
-      repeat={Infinity}
-      className="p-4 text-cyan-400 font-mono text-base"
-    />
   );
 }
 
