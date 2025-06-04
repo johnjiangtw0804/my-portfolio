@@ -1,12 +1,7 @@
-import Header from "./components/Header";
-import Scene from "./components/Anime";
+import Header from "./components/Header/Header";
 import Hero from "./components/Hero";
+import TechStack from "./components/TechStack";
 
-// scene: container all the action happens (space)
-// environment: surrounding background in the scene
-// Objects: elements. Mesh
-// camera: see the scene (viewpoint)
-// renderer: brain, data from our eyes
 function App() {
   return (
     <>
@@ -15,11 +10,11 @@ function App() {
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-indigo-500/20 blur-2xl rounded-full" />
 
       {/* 實際內容 */}
-      <div className="center-container">
-        <Header />
-        <Scene className="w-full h-[550px]" />
+      <Header />
+      <main>
         <Hero />
-      </div>
+        <TechStack />
+      </main>
     </>
   );
 }

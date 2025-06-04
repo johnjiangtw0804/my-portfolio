@@ -1,46 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap");
 @import "tailwindcss";
 
-:root {
-  --font-display: "Cherry Bomb One", sans-serif;
+@theme {
+  --font-Inter: "Inter", sans-serif;
+}
+/* base */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   @apply bg-gray-950 text-purple-200 font-mono;
 }
 
+
+/* Component */
 @layer components {
-  /* Navbar: 固定最大寬度並置中 */
-  .navbar-container {
-    @apply flex container justify-between items-center max-w-5xl h-16 mx-auto px-4 md:px-8;
+
+  /* NAVBAR */
+  .menu-button {
+    @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-1 ring-zinc-50/[0.02]
+          backdrop-blur-2xl hover:bg-zinc-50/15 hover:cursor-pointer
+  }
+  .navbar {
+    @apply z-10 absolute top-full right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl scale-90 isolate blur-sm opacity-0 invisible
+          md:static md:flex md:items-center md:mt-0 md:visible md:blur-none md:opacity-100
   }
 
-  /* 區塊容器 */
-  .section-container {
-    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  .navbar.active {
+    @apply opacity-100 scale-100 visible blur-none
   }
 
-  /* 標題 */
-  .title-xl {
-    @apply text-3xl sm:text-4xl lg:text-5xl font-bold;
+  .nav-link {
+    @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50
+    transition-colors
   }
 
-  .title-md {
-    @apply text-lg sm:text-xl md:text-2xl;
+  .nav-link.active {
+    @apply text-neutral-600 duration-500
   }
 
-  /* 正文段落 */
-  .text-body {
-    @apply text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto;
+  .navbar>.active-box {
+    @apply bg-zinc-50 rounded-lg absolute -z-10 transition-all duration-300 ease-in-out;
   }
 
-  /* 社群 icon */
-  .social-icon {
-    @apply text-xl text-gray-400 hover:text-blue-500 transition;
+  /* BUTTONS */
+  .btn {
+    @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5
+          ring-inset;
   }
 
-  /* 內容中央容器 */
-  .center-container {
-    @apply z-10 min-h-screen flex flex-col space-y-8;
+  .btn-secondary {
+    @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80;
+  }
+
+
+  /* max width 要設置 mx-auto 會擴張 */
+  /* Utilities */
+  .container-supplement {
+    @apply px-4 mx-auto lg:px-8 lg:max-w-6xl;
+  }
+
+  .img-cover {
+    @apply w-full h-full object-cover;
+  }
+
+  /* 字體大小等 */
+  .headline-1 {
+    @apply  text-2xl leading-tight font-semibold lg:text-3xl;
   }
 }
+
+
