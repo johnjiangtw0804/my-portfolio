@@ -1,4 +1,4 @@
-import { skillItem } from "./Constants/contents";
+import { skillItem } from "../Constants/contents";
 import SkillCard from "./SkillCard";
 
 function Skills() {

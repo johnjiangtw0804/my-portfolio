@@ -14,7 +14,6 @@ body {
   @apply bg-gray-950 text-purple-200 font-mono;
 }
 
-
 /* ---------Component --------- */
 @layer components {
 
@@ -98,13 +97,33 @@ body {
     @apply text-2xl sm:text-3xl lg:text-4xl font-bold;
   }
 
+  .title-1{
+    @apply text-[22px]
+  }
 
-    /* --------- Containers --------- */
-    /* 間隔 */
-    .section {
-      @apply pt-20 lg:pt-28;
-    }
-    .container-supplement {
-      @apply px-4 mx-auto lg:px-8 lg:max-w-6xl;
-    }
+  .label {
+    @apply block text-sm font-bold mb-2
+  }
+
+  .text-field{
+    @apply block outline-none w-full px-3 text-sm bg-zinc-800
+    rounded-2xl ring-transparent focus:ring-2
+    focus:ring-sky-200
+    transition-shadow ring-1 ring-inset hover:ring-zinc-50/5
+  }
+
+  .text-field::placeholder{
+    @apply text-zinc-400
+
+  }
+
+
+  /* --------- Containers --------- */
+  /* 間隔 */
+  .section {
+    @apply pt-20 lg:pt-28;
+  }
+  .container-supplement {
+    @apply px-4 mx-auto lg:px-8 lg:max-w-6xl;
+  }
 }

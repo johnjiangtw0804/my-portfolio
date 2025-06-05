@@ -1,7 +1,9 @@
 import About from "./components/About";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero";
-import Skills from "./components/Skills";
+import Skills from "./components/Skills/Skills";
+import Work from "./components/Work/Work";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <Work />
+        <Contact />
       </main>
     </>
   );

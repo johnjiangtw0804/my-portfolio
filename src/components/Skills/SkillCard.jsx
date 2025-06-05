@@ -8,7 +8,7 @@ function SkillCard({ imgSrc, label, desc, classes = "" }) {
         classes
       }
     >
-      <figure className="bg-zinc-50 rounded-2xl overflow-hidden w-12 h-12 p-2 flex items-center justify-center">
+      <figure className="bg-zinc-800 rounded-2xl overflow-hidden w-12 h-12 p-2 flex items-center justify-center">
         <img src={imgSrc} width={32} height={32} alt="skill-icon" />
       </figure>
       <div>
