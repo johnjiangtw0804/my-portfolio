@@ -56,7 +56,7 @@ function Hero() {
           </div>
           <RandomQuoteBox />
         </div>
-        <a href="/Jonathan-Jiang-resume.pdf" download>
+        <a href="/Jonathan-Jiang-resume-init.pdf" download>
           <div className="flex gap-3">
             <ButtonPrimary label="Download CV" icon="download"></ButtonPrimary>
             <ButtonOutline
