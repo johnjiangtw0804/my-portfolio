@@ -54,4 +54,64 @@ const aboutMeItems = [
     label: "Years Of experience",
   number: 3}]
 
-  export { quotes, aboutMeItems, aboutMe };
+  const skillItem = [
+    {
+      imgSrc: '/images/c++.svg',
+      label: 'C++',
+      desc: 'Coding Language'
+    },
+    {
+      imgSrc: '/images/java.svg',
+      label: 'Java',
+      desc: 'Coding Language'
+    },
+    {
+      imgSrc: '/images/go-8.svg',
+      label: 'Golang',
+      desc: 'Coding Language'
+    },
+    {
+      imgSrc: '/images/javascript.svg',
+      label: 'JavaScript',
+      desc: 'Interaction'
+    },
+    {
+      imgSrc: '/images/css3.svg',
+      label: 'CSS',
+      desc: 'User Interface'
+    },
+    {
+      imgSrc: '/images/html-5.svg',
+      label: 'HTML',
+      desc: 'User Interface'
+    },
+    {
+      imgSrc: '/images/postgresql.svg',
+      label: 'PostgresSQL',
+      desc: 'Database'
+    },
+    {
+      imgSrc: '/images/react.svg',
+      label: 'React',
+      desc: 'Framework'
+    },
+    {
+      imgSrc: '/images/tailwindcss.svg',
+      label: 'TailwindCSS',
+      desc: 'User Interface'
+    },
+    {
+      imgSrc: '/images/docker.svg',
+      label: 'Docker',
+      desc: 'Container technologies'
+    },
+    {
+      imgSrc: '/images/k8s.svg',
+      label: 'Kubernetes',
+      desc: 'Container technologies'
+    }
+  ];
+
+  export { quotes, aboutMeItems, aboutMe, skillItem };
+
+

@@ -81,23 +81,30 @@ body {
 
   /* 這個寫法的意思是：左右 margin 自動分配剩餘空間。但只有當你的元素不是 100% 寬的時候，它才有「剩餘空間」可以平均分配。*/
   /* --------- Utilities --------- */
-  .container-supplement {
-    @apply px-4 mx-auto lg:px-8 lg:max-w-6xl;
-  }
-
   .img-cover {
     @apply w-full h-full object-cover;
   }
 
   /* --------- Typography --------- */
-  .headline-1 {
-    @apply  text-2xl leading-tight font-semibold lg:text-3xl;
+  .headline-1, .headline-2 {
+    @apply font-mono text-cyan-200 tracking-tight leading-snug drop-shadow-[0_0_1px_#22d3ee88];
   }
 
+  .headline-1 {
+    @apply text-xl sm:text-2xl lg:text-3xl font-semibold;
+  }
+
+  .headline-2 {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold;
+  }
+
+
     /* --------- Containers --------- */
+    /* 間隔 */
     .section {
       @apply pt-20 lg:pt-28;
     }
+    .container-supplement {
+      @apply px-4 mx-auto lg:px-8 lg:max-w-6xl;
+    }
 }
-
-

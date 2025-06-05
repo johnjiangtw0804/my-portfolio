@@ -1,7 +1,7 @@
 import About from "./components/About";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero";
-import TechStack from "./components/TechStack";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <main>
         <Hero />
         <About />
-        <TechStack />
+        <Skills />
       </main>
     </>
   );
