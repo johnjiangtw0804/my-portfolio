@@ -30,11 +30,11 @@ function WorkCard({ imgSrc, title, tags, projectLink, className }) {
             ))}
           </div>
         </div>
-        <div className="w-11 h-11 rounded-lg flex items-center justify-center text-zinc-950 bg-cyan-200 shrink-0">
+        {/* <div className="w-11 h-11 rounded-lg text-zinc-950 bg-cyan-200 shrink-0 absolute bottom-0 right-0">
           <span className="material-symbols-outlined" aria-hidden="true">
             arrow_outward
           </span>
-        </div>
+        </div> */}
       </div>
       <a href={projectLink} target="_blank" className="absolute inset-0"></a>
     </div>

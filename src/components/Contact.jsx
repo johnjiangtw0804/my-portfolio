@@ -8,7 +8,7 @@ const socialLinks = [
     alt: "linkedin",
   },
   {
-    href: "",
+    href: "https://github.com/johnjiangtw0804",
     icon: <FaGithub />,
     alt: "GitHub",
   },
@@ -17,7 +17,7 @@ const socialLinks = [
 function Contact() {
   return (
     <section id="socials" className="section">
-      <div className="container container-supplement lg:grid lg:grid-cols-2 lg:items-stretch">
+      <div className="container container-supplement lg:grid lg:grid-cols-2 lg:items-stretch gap-3">
         {/*  Social icons and some warm words */}
         <div className="mb-12 lg:mb-5 lg:flex lg:flex-col">
           <h2 className="headline-2 lg:max-w-[30ch]">
@@ -45,7 +45,11 @@ function Contact() {
         {/* Text messages */}
         {/* <div className="border border-red-500">Name</div> */}
         {/* <div className="border border-blue-500">Email</div> */}
-        <form action="" method="POST" className="xl:pl-10 2xl:pl-20">
+        <form
+          action="https://getform.io/f/aronglqb"
+          method="POST"
+          className="xl:pl-10 2xl:pl-20"
+        >
           <div className="md:items-center md:grid md:grid-cols-2 gap-2">
             <div className="mb-4">
               <label htmlFor="name" className="label mb-4">
@@ -91,7 +95,7 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="btn btn-primary [&]:max-w-full w-full items-center"
+              className="btn btn-primary text-center max-w-full w-full items-center block"
             >
               Submit
             </button>

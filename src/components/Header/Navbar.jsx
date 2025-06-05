@@ -44,7 +44,7 @@ function Navbar({ navOpen }) {
     },
     {
       label: "Socials",
-      link: "#Socials",
+      link: "#socials",
       className: "nav-link",
     },
     {

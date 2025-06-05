@@ -54,7 +54,7 @@ const aboutMeItems = [
 
   const skillItem = [
     {
-      imgSrc: '/images/c++.svg',
+      imgSrc: '/images/skill/c++.svg',
       label: 'C++',
       desc: 'Coding Language'
     },
@@ -152,6 +152,26 @@ const aboutMeItems = [
     },
   ];
 
-  export { quotes, aboutMeItems, aboutMe, skillItem, workItems};
+  const sitemap = [
+    {
+      label: 'Home',
+      href: '#home'
+    },
+    {
+      label: 'About',
+      href: '#about'
+    },
+    {
+      label: 'Work',
+      href: '#work'
+    },
+    {
+      label: 'Contact me',
+      href: '#socials'
+    }
+  ];
+
+
+  export { quotes, aboutMeItems, aboutMe, skillItem, workItems, sitemap};
 
 

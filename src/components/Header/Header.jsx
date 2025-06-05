@@ -38,7 +38,7 @@ function Header() {
 
         {/* Contact me */}
         <a
-          href="#contact"
+          href="#socials"
           className="btn btn-secondary max-md:hidden md:justify-end"
         >
           contact me
