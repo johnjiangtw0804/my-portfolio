@@ -84,6 +84,11 @@ const aboutMeItems = [
       desc: 'User Interface'
     },
     {
+      imgSrc: '/images/skill/python.svg',
+      label: 'Python',
+      desc: 'Coding Language'
+    },
+    {
       imgSrc: '/images/skill/postgresql.svg',
       label: 'PostgresSQL',
       desc: 'Database'
